@@ -65,9 +65,10 @@
 	height: 40rem;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1950px) {
 	.App {
 		display: flex;
+		height: 140vh;
 	}
 
 	.content__left {
@@ -76,5 +77,13 @@
 
 	.content__right {
 		width: 30%;
+	}
+
+	.chart__wrapper {
+		/* border: solid purple; */
+		height: 70rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

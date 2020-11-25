@@ -90,5 +90,21 @@ const Wrapper = styled.div`
 		height: 80%;
 		width: 27%;
 	}
+
+	@media screen and (max-width: 1950px) {
+		/* border: solid blue; */
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		/* justify-content: center; */
+		/* align-items: center; */
+
+		.chart__holder {
+			/* border: solid yellow; */
+			height: 80%;
+			width: 70%;
+			margin-left: 7rem;
+		}
+	}
 `;
 export default Chart;

@@ -73,6 +73,7 @@ const Wrapper = styled.div`
 		/* width: 20.5rem; */
 		width: 100%;
 		height: 100%;
+		object-fit: contain;
 		/* font-size: 1.1rem; */
 
 		.text__wrapper {
@@ -96,6 +97,22 @@ const Wrapper = styled.div`
 		span {
 			font-family: "Harmattan", sans-serif !important;
 			font-size: 1.1rem;
+		}
+
+		@media screen and (max-width: 1650px) {
+			p,
+			span {
+				margin-top: -0.5rem;
+				font-size: 1rem;
+			}
+		}
+
+		@media screen and (max-width: 1250px) {
+			p,
+			span,
+			h3 {
+				font-size: 0.9rem;
+			}
 		}
 	}
 `;
