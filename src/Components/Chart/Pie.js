@@ -10,8 +10,8 @@ function Pie({ data }) {
 		type: "pie3d",
 		// height: "450", // Height of the chart
 		// width: "402",
-		height: "420",
-		width: "380",
+		height: "47%",
+		width: "100%",
 		dataFormat: "json", // Data type
 		dataSource: {
 			// Chart Configuration
@@ -19,7 +19,7 @@ function Pie({ data }) {
 				caption: "Top 5 highest overall cases/state",
 				theme: "candy",
 				decimals: 0,
-				pieRadius: "45%",
+				pieRadius: "40%",
 				showPercentValues: 0,
 				showBorder: true,
 				borderThickness: 20,

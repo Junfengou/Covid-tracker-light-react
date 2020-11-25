@@ -10,8 +10,8 @@ function Line2D({ data }) {
 		type: "doughnut2d", // The chart type
 		// height: "450", // Height of the chart
 		// width: "402",
-		height: "420",
-		width: "380",
+		height: "47%",
+		width: "100%",
 		dataFormat: "json", // Data type
 		dataSource: {
 			// Chart Configuration
@@ -19,8 +19,8 @@ function Line2D({ data }) {
 				caption: "Top 10 most tested states",
 				theme: "candy", //make sure the candy theme is imported
 				decimals: 0,
-				doughnutRadius: "45%",
-				pieRadius: "45%",
+				doughnutRadius: "40%",
+				pieRadius: "40%",
 				showBorder: true,
 				showPercentValues: false,
 				borderThickness: 20,

@@ -10,8 +10,8 @@ function Column2D({ data }) {
 		type: "column2d", // The chart type
 		// height: "450", // Height of the chart
 		// width: "402",
-		height: "420",
-		width: "380",
+		height: "47%",
+		width: "100%",
 		dataFormat: "json", // Data type
 		dataSource: {
 			// Chart Configuration

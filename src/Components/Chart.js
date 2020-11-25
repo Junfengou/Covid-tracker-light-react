@@ -77,7 +77,7 @@ function Chart() {
 }
 const Wrapper = styled.div`
 	/* border: solid red; */
-	height: 32rem;
+	height: 90%;
 	width: 100%;
 	/* margin-left: 3rem; */
 	display: flex;
@@ -85,8 +85,10 @@ const Wrapper = styled.div`
 	align-items: center;
 	.chart__holder {
 		/* border: solid purple; */
-		height: 32rem;
-		width: 22rem;
+		/* height: 32rem;
+		width: 22rem; */
+		height: 80%;
+		width: 27%;
 	}
 `;
 export default Chart;
