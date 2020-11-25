@@ -1,5 +1,6 @@
 :root {
 	--orange: #f66a0a;
+	--red: #eb6666;
 	--green: #28a745;
 	--blue: #0070f3;
 	--lightBlue: #79b8ff;
@@ -48,7 +49,7 @@
 
 .box__wrapper {
 	/* border: solid red; */
-	width: 70%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -22,16 +22,19 @@ function App() {
 				<Title />
 				<div className="box__wrapper">
 					<Bar
+						isRed
 						text="Infected"
 						cases={prettyNumStats(cases)}
 						tcases={prettyPrintStat(todayCases)}
 					/>
 					<Bar
+						isGrey
 						text="Death"
 						deaths={prettyNumStats(deaths)}
 						tdeath={prettyPrintStat(todayDeaths)}
 					/>
 					<Bar
+						isBlue
 						text="Recovered"
 						recover={prettyNumStats(recovered)}
 						trecover={prettyPrintStat(todayRecovered)}

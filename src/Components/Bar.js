@@ -1,11 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 
-function Bar({ text, cases, tcases, deaths, tdeath, recover, trecover }) {
+function Bar({
+	text,
+	cases,
+	tcases,
+	deaths,
+	tdeath,
+	recover,
+	trecover,
+	isRed,
+	isGrey,
+	isBlue,
+}) {
 	// console.log("data: ", cases);
 	return (
 		<Wrapper>
-			<div className="left__section" />
+			<div
+				className={`left__section ${isRed && "red"} ${isGrey && "grey"} ${
+					isBlue && "blue"
+				}`}
+			/>
 
 			<div className="right__section">
 				<div className="text__wrapper">
@@ -27,25 +42,43 @@ const Wrapper = styled.div`
 	/* background-color: var(--grey); */
 	border: solid 2px var(--grey);
 	border-radius: 3px;
-	height: 10rem;
-	width: 22rem;
+	/* height: 10rem;
+	width: 22rem; */
+	height: 70%;
+	width: 23%;
 	display: flex;
 	/* border: solid green; */
 	.left__section {
-		background-color: var(--lightBlue);
-		width: 1.5rem;
+		/* background-color: var(--grey); */
+		/* width: 1.5rem; */
+		width: 8%;
 		height: 100%;
 		/* border: solid purple; */
 	}
+	.red {
+		background-color: var(--red);
+	}
+
+	.grey {
+		background-color: var(--grey);
+	}
+
+	.blue {
+		background-color: var(--lightBlue);
+	}
+
 	.right__section {
 		/* border: solid purple; */
 		background-color: var(--offWhite);
-		width: 20.5rem;
-		font-size: 1.1rem;
+		/* width: 20.5rem; */
+		width: 100%;
+		height: 100%;
+		/* font-size: 1.1rem; */
 
 		.text__wrapper {
 			/* border: solid red; */
 			height: 100%;
+			width: 100%;
 			margin-left: 1rem;
 		}
 
