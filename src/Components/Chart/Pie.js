@@ -24,6 +24,7 @@ function Pie({ data }) {
 				showBorder: true,
 				borderThickness: 20,
 				borderColor: "#6a737d",
+				valueFontSize: 15,
 			},
 			// Chart Data
 			data,

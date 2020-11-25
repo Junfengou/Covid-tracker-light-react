@@ -25,6 +25,7 @@ function Line2D({ data }) {
 				showPercentValues: false,
 				borderThickness: 20,
 				borderColor: "#6a737d",
+				valueFontSize: 15,
 			},
 			// Chart Data
 			data,

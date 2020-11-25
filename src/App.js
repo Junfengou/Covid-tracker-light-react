@@ -44,6 +44,7 @@ function App() {
 			</div>
 			<div className="content__right">
 				<Info data={countries} />
+				{/* <DummyList /> */}
 			</div>
 		</div>
 	);

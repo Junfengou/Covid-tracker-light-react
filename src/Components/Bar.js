@@ -39,12 +39,30 @@ const Wrapper = styled.div`
 	}
 	.right__section {
 		/* border: solid purple; */
+		background-color: var(--offWhite);
 		width: 20.5rem;
+		font-size: 1.1rem;
 
 		.text__wrapper {
 			/* border: solid red; */
 			height: 100%;
 			margin-left: 1rem;
+		}
+
+		h3 {
+			font-family: "Nerko One", cursive !important;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-family: "Nerko One", cursive !important;
+			text-transform: uppercase;
+			font-size: 1.2rem;
+		}
+
+		span {
+			font-family: "Harmattan", sans-serif !important;
+			font-size: 1.1rem;
 		}
 	}
 `;

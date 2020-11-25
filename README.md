@@ -1,1 +1,1 @@
-Just a boilerplate react app
+Covid tracker app
