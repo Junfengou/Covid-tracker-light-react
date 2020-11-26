@@ -29,7 +29,7 @@
 
 .content__left {
 	/* border: solid red; */
-	height: 100%;
+	height: 100vh;
 	width: 75vw;
 	display: flex;
 	flex-direction: column;
@@ -57,7 +57,7 @@
 }
 
 .chart__wrapper {
-	border: solid purple;
+	/* border: solid purple; */
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
@@ -72,10 +72,12 @@
 	}
 
 	.content__left {
+		height: 120vh;
 		width: 70%;
 	}
 
 	.content__right {
+		height: 120vh;
 		width: 30%;
 	}
 

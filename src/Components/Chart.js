@@ -84,11 +84,27 @@ const Wrapper = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	.chart__holder {
-		border: solid purple;
+		/* border: solid purple; */
 		/* height: 32rem;
 		width: 22rem; */
 		height: 80%;
 		width: 27%;
+	}
+
+	@media screen and (max-width: 1440px) {
+		/* border: solid blue; */
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		.chart__holder {
+			/* border: solid green; */
+			height: 80%;
+			width: 70%;
+			margin-bottom: 2rem;
+			margin-left: 6rem;
+		}
 	}
 
 	/* @media screen and (max-width: 1950px) {
