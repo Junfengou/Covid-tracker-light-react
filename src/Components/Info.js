@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 	height: 55rem;
 	width: 25rem;
 	border-radius: 9px;
-	/* margin-top: 10rem; */
+	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
 	background-color: var(--offWhite);

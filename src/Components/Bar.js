@@ -42,17 +42,18 @@ const Wrapper = styled.div`
 	/* background-color: var(--grey); */
 	border: solid 2px var(--grey);
 	border-radius: 3px;
-	/* height: 10rem;
-	width: 22rem; */
-	height: 70%;
-	width: 23%;
+	height: 10rem;
+	width: 22rem;
+	/* height: 70%;
+	width: 23%; */
 	display: flex;
 	/* border: solid green; */
 	.left__section {
 		/* background-color: var(--grey); */
-		/* width: 1.5rem; */
-		width: 8%;
-		height: 100%;
+		width: 1.5rem;
+		height: 10rem;
+		/* width: 8%;
+		height: 100%; */
 		/* border: solid purple; */
 	}
 	.red {
@@ -98,21 +99,21 @@ const Wrapper = styled.div`
 			font-family: "Harmattan", sans-serif !important;
 			font-size: 1.1rem;
 		}
+	}
 
-		@media screen and (max-width: 1650px) {
-			p,
-			span {
-				margin-top: -0.5rem;
-				font-size: 1rem;
-			}
+	@media screen and (max-width: 1250px) {
+		width: 12rem;
+		height: 10rem;
+
+		.left__section {
+			width: 1.5rem;
+			height: 10rem;
 		}
 
-		@media screen and (max-width: 1250px) {
-			p,
-			span,
-			h3 {
-				font-size: 0.9rem;
-			}
+		p,
+		span,
+		h3 {
+			font-size: 0.9rem;
 		}
 	}
 `;
