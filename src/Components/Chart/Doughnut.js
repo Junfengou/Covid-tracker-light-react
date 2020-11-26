@@ -10,7 +10,7 @@ function Line2D({ data }) {
 		type: "doughnut2d", // The chart type
 		// height: "450", // Height of the chart
 		// width: "402",
-		height: "47%",
+		height: "35%",
 		width: "100%",
 		dataFormat: "json", // Data type
 		dataSource: {
