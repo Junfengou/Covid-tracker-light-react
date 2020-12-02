@@ -76,25 +76,15 @@ function Chart() {
 	);
 }
 
-{
-	/**
-<div className="chart__holder">
-				<Column data={MostDeaths} />
-			</div>
-			<div className="chart__holder">
-				<Doughnut data={MostTested} />
-			</div>
-
-*/
-}
 const Wrapper = styled.div`
-	/* border: solid red; */
+	/* border: solid blue; */
 	height: 100%;
 	width: 100%;
 	/* margin-left: 3rem; */
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+
 	.chart__holder {
 		/* border: solid purple; */
 		/* height: 32rem;
@@ -102,5 +92,21 @@ const Wrapper = styled.div`
 		height: 100%;
 		width: 27%;
 	}
+
+	@media (max-width: 1500px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		.chart__holder {
+			height: 83%;
+			width: 70%;
+			margin-left: 4rem;
+			margin-bottom: 2rem;
+		}
+	}
+	/* 
+	@media (max-width: 1500px) {
+		border: solid red;
+	} */
 `;
 export default Chart;

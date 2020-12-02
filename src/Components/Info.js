@@ -25,7 +25,7 @@ function Info({ data }) {
 
 const Wrapper = styled.div`
 	/* border: solid red; */
-	height: 55rem;
+	height: 45rem;
 	width: 25rem;
 	border-radius: 9px;
 	margin-top: 2rem;
