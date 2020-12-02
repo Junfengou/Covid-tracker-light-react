@@ -75,9 +75,21 @@ function Chart() {
 		</Wrapper>
 	);
 }
+
+{
+	/**
+<div className="chart__holder">
+				<Column data={MostDeaths} />
+			</div>
+			<div className="chart__holder">
+				<Doughnut data={MostTested} />
+			</div>
+
+*/
+}
 const Wrapper = styled.div`
 	/* border: solid red; */
-	height: 90%;
+	height: 100%;
 	width: 100%;
 	/* margin-left: 3rem; */
 	display: flex;
@@ -87,24 +99,8 @@ const Wrapper = styled.div`
 		/* border: solid purple; */
 		/* height: 32rem;
 		width: 22rem; */
-		height: 80%;
-		width: 27%;
-	}
-
-	@media screen and (max-width: 1440px) {
-		/* border: solid blue; */
 		height: 100%;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-
-		.chart__holder {
-			/* border: solid green; */
-			height: 80%;
-			width: 70%;
-			margin-bottom: 2rem;
-			margin-left: 6rem;
-		}
+		width: 27%;
 	}
 `;
 export default Chart;

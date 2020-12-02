@@ -10,7 +10,7 @@ function Pie({ data }) {
 		type: "pie3d",
 		// height: "450", // Height of the chart
 		// width: "402",
-		height: "28%",
+		height: "400",
 		width: "100%",
 		dataFormat: "json", // Data type
 		dataSource: {
