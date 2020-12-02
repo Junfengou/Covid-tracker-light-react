@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { CovidContext } from "./context/context";
 import axios from "axios";
-import { Bar, Title, Chart, Info, Tagline } from "./Components/Index";
+import { Title, Chart, Info, Tagline } from "./Components/Index";
 import { prettyPrintStat, prettyNumStats } from "./utils";
 import styled from "styled-components";
 import "./App.css";
@@ -195,34 +195,49 @@ const Wrapper = styled.div`
 			align-items: center; */
 		}
 	}
+
+	@media (max-width: 1000px) {
+		display: flex;
+		flex-direction: column;
+		height: 400vh;
+
+		.left__section {
+			/* border: solid green; */
+			justify-content: space-around;
+			height: 75%;
+			width: 70%;
+		}
+
+		.title {
+			height: 5%;
+			/* border: solid red; */
+		}
+
+		.boxes {
+			/* border: solid blue; */
+			height: 35% !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.box__wrapper {
+			/* border: solid red; */
+			height: 9rem;
+			width: 15rem !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.charts {
+			/* border: solid red; */
+			height: 60rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
 `;
 
 export default App;
-
-{
-	/**
-
-<Title />
-			<div className="box__wrapper">
-				<Bar
-					text="Infected"
-					cases={prettyNumStats(cases)}
-					tcases={prettyPrintStat(todayCases)}
-				/>
-				<Bar
-					text="Death"
-					deaths={prettyNumStats(deaths)}
-					tdeath={prettyPrintStat(todayDeaths)}
-				/>
-				<Bar
-					text="Recovered"
-					recover={prettyNumStats(recovered)}
-					trecover={prettyPrintStat(todayRecovered)}
-				/>
-			</div>
-
-			<div className="chart__wrapper">
-				<Chart />
-			</div>
-*/
-}

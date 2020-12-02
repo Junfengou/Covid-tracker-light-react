@@ -104,9 +104,18 @@ const Wrapper = styled.div`
 			margin-bottom: 2rem;
 		}
 	}
-	/* 
-	@media (max-width: 1500px) {
-		border: solid red;
-	} */
+
+	@media (max-width: 1000px) {
+		/* border: solid gold; */
+		display: flex;
+		flex-direction: column;
+
+		.chart__holder {
+			height: 40%;
+			width: 70%;
+			margin-left: 0rem;
+			margin-bottom: 2rem;
+		}
+	}
 `;
 export default Chart;

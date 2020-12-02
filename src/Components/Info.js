@@ -62,6 +62,12 @@ const Wrapper = styled.div`
 	.table::-webkit-scrollbar {
 		display: none;
 	}
+
+	@media (max-width: 1000px) {
+		height: 45rem;
+		width: 22rem;
+		/* border: solid red; */
+	}
 `;
 
 export default Info;

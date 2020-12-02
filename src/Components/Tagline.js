@@ -82,6 +82,27 @@ const Wrapper = styled.div`
 			margin-bottom: 1.5rem;
 		}
 	}
+
+	@media (max-width: 1000px) {
+		/* border: solid red; */
+		height: 90%;
+		width: 100%;
+
+		.right {
+			h3 {
+				/* border: solid red; */
+				font-size: 1rem;
+			}
+
+			p {
+				/* border: solid red; */
+				margin-top: -1.1rem;
+				margin-left: 1rem;
+				margin-bottom: 1.2rem;
+				font-size: 1rem;
+			}
+		}
+	}
 `;
 
 export default Tagline;
